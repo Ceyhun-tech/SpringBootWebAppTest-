@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="">
+<a href="/showData">Müəllim bazası</a><br><br>
+<h1>Müəllimin tədris edəcəyi fənlər</h1>
+<a href="/showDataF">Fənn bazası</a>
+<form action="/saveData"   method="get">
+    Id: <input type="text" name="id"/> <br>
+    Ad: <input type="text" name="ad"/><br>
+    Soyad: <input type="text" name="soyad"/><br><br>
+    <input type="submit" value="Gonder"><br>
+</form> <br><br>
+<form action="/saveDataF"   method="get">
+    <h6>Daxil olacaq Fenler</h6>
+    Id: <input type="text" name="fid"/> <br>
+    Ad: <input type="text" name="fad"/><br>
+    Ders saat: <input type="text" name="fms"/><br>
+    <input type="submit" value="Gonder"><br>
+</form> <br><br>
+<form action="/deleteData" method="get">
+    Id: <input type="text"  name="id"/>
+    <input type="submit" value="Sil">
+</form><br>
+<form action="/updateData" method="get">
+    Id: <input type="text" name="id"/>
+    Ad: <input type="text" name="ad"/>
+    Soyad: <input type="text" name="soyad"/>
+    <input type="submit" value="Yenile">
+</form><br>
+
+<form action="/ad" method="get">
+    Ad: <input type="text"  name="ad"/>
+    <input type="submit" value="Axtar">
+</form><br>
+
+<!--Jon olan table  -->
+<form action="/saveDataTF"   method="get">
+    Cədvəl Id: <input type="text" name="tfid"/> <br>
+    Müəllim Id: <input type="text" name="id"/> <br>
+    Fənn Id: <input type="text" name="fid"/> <br>
+       <input type="submit" value="Gonder"><br>
+</form>
+
+
+
+</body>
+</html>

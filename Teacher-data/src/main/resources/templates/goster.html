@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <td>ID</td>
+        <td>Ad</td>
+        <td>Soyad</td>
+    </tr>
+    </thead>
+
+
+    <tr th:each="teacher: ${data}">
+    <td th:text="${teacher.id}"></td>
+        <td th:text="${teacher.ad}"></td>
+        <td th:text="${teacher.soyad}"></td>
+        <td>
+            <select>
+                <option th:each="fenn:${teacher.fennList}"
+                        th:text="${fenn.fad}"
+                        th:value="${fenn.fid}">
+
+
+                </option>
+            </select>
+        </td>
+    </tr>
+  </table>
+
+</body>
+</html>

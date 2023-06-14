@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Keçid səhifəsi!</title>
+</head>
+<body>
+<a href="/index">İstifadəçi</a><br>
+<h1 th:inline="text">Salam. <span th:remove="tag" sec:authentication="name">Spring Boot veb proqramı</span>!</h1>
+<form th:action="@{/logout}" method="post">
+  <input type="submit" value="Çıxış"/>
+</form>
+</body>
+</html>

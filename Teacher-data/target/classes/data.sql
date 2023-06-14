@@ -1,0 +1,1 @@
+INSERT INTO Teacher VALUES (1, "Ceyhun", "Sirin")

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+  <thead>
+  <tr>
+    <td>ID</td>
+    <td>Ad</td>
+    <td>Ders saat</td>
+  </tr>
+  </thead>
+  <tr th:each="fenn: ${dataf}">
+    <td th:text="${fenn.fid}"></td>
+    <td th:text="${fenn.fad}"></td>
+    <td th:text="${fenn.fms}"></td>
+  </tr>
+</table>
+</body>
+</html>
